@@ -73,39 +73,5 @@ opencv-python>=4.5.0
 numpy>=1.19.0
 ```
 
-## Installation and Setup
-
-1. Clone the repository:
-```bash
-git clone [repository-url]
-cd river-plastic-detection
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-3. Download the pretrained model:
-```bash
-python scripts/download_model.py
-```
-
-## Usage
-
-### Basic Implementation
-```python
-from ultralytics import YOLO
-
-# Load the model
-model = YOLO('models/best.pt')
-
-# Perform detection on an image
-results = model('path/to/image.jpg')
-
-# Process video stream
-results = model.predict(source="0", show=True)  # 0 for webcam
-```
-
----
+-----
 
